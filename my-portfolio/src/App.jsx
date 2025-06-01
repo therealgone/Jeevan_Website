@@ -1,29 +1,25 @@
 import AnimatedBackground from "./components/AnimatedBackground";
 import Navbar from "./components/navbar.jsx";
 import About from "./components/about.jsx";
+import Info from "./components/info.jsx";
 
 function App() {
   return (
-    
-    <div className="relative w-full overflow-x-hidden">
-     
-      {/* Animated background should go behind everything */}
-
+    <div className="relative w-full overflow-x-hidden scroll-smooth">
       <AnimatedBackground />
-       <Navbar />
-      {/* Navbar comes first, top of page */}
-       
-      
+      <Navbar />
 
-      <main className="relative z-10 text-white">
-        <About />
-        
+      <main className="relative z-10 text-white pt-20">
+        {/* Each section wrapped with an ID */}
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="info">
+          <Info />
+        </section>
       </main>
-      
-      
     </div>
-    
-    
   );
 }
 

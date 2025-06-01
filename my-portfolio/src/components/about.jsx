@@ -2,19 +2,19 @@ import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 function About() {
   return (
-   <div className='text-center py-20  tracking-widest'>
-      <h1 className="text-5xl font-bold py-20 font-mono text-glow-white  ">Jeevan Baabu Murugan</h1>
-       <h1 className='bg-animated-gradient border border-transparent text-white flex items-center  justify-center w-[400px] h-[80px]  mx-auto text-glow-white'>
+   <div className='text-center  tracking-widest min-h-screen'>
+      <h1 className="text-5xl font-bold py-10 mb-20 font-mono text-glow-white  ">Jeevan Baabu Murugan</h1>
+       <h1 className='bg-animated-gradient border border-transparent text-white flex items-center  justify-center w-[400px] h-[80px]  mx-auto text-glow-white '>
         {''}
         
         <span className='font-mono font-bold text-3xl  '>
             <Typewriter
-             words={['Web Developer', 'Software Engineer', 'Tech Enthusiast',"AI Enthusiast"]}
+             words={['Web Developer', 'Tech Enthusiast',"AI Enthusiast"]}
              loop={0} 
              cursor
              cursorStyle='|'
-                typeSpeed={70}  
-                deleteSpeed={50}
+                typeSpeed={90}  
+                deleteSpeed={60}
                 delaySpeed={1000}
             />
         </span>
@@ -56,7 +56,7 @@ function About() {
      
 
     </div>
-     <div className='mt-45 animate-bounce'>
+     <div className='mt-40 animate-bounce'>
         <h5>Scroll for more</h5>
         <h5 className='font-bold text-2xl'>↓</h5>
       </div>
