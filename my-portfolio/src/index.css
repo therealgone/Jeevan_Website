@@ -9,6 +9,8 @@
   }
 }
 
+
+
 .bg-animated-gradient {
   background: linear-gradient(
     135deg,
@@ -44,3 +46,30 @@
   .pop-animation{
     animation: pop 0.3s ease-in-out;
   }
+
+  @keyframes spin-x {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin-x {
+  animation: spin-x 8s linear infinite;
+  transform-style: preserve-3d;
+  hover {
+    animation-play-state: paused;
+  }
+}
+
+.pruple-font{
+  @apply text-5xl font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold;
+}

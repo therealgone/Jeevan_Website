@@ -2,10 +2,11 @@ import AnimatedBackground from "./components/AnimatedBackground";
 import Navbar from "./components/navbar.jsx";
 import About from "./components/about.jsx";
 import Info from "./components/info.jsx";
+import Stack from "./components/stack.jsx";
 
 function App() {
   return (
-    <div className="relative w-full overflow-x-hidden scroll-smooth">
+    <div className="relative w-full  scroll-smooth">
       <AnimatedBackground />
       <Navbar />
 
@@ -17,6 +18,9 @@ function App() {
 
         <section id="info">
           <Info />
+        </section>
+        <section id="stack">
+          <Stack />
         </section>
       </main>
     </div>
