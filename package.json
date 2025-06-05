@@ -1,0 +1,13 @@
+{
+  "name": "jeevan-website",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "my-portfolio"
+  ],
+  "scripts": {
+    "build": "cd my-portfolio && npm run build",
+    "dev": "cd my-portfolio && npm run dev",
+    "start": "cd my-portfolio && npm run start"
+  }
+} 
