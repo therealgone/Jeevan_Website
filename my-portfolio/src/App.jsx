@@ -1,5 +1,5 @@
-import AnimatedBackground from "./components/AnimatedBackground";
-import Navbar from "./components/navbar.jsx";
+import AnimatedBackground from "./components/AnimatedBackground.tsx";
+import Navbar from "./components/Navbar.jsx";
 import About from "./components/about.jsx";
 import Info from "./components/info.jsx";
 import Stack from "./components/stack.jsx";
@@ -30,7 +30,6 @@ function App() {
 
         <section id="contact">
           <Contact />
-
         </section>
       </main>
     </div>
