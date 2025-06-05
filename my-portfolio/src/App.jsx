@@ -3,6 +3,7 @@ import Navbar from "./components/navbar.jsx";
 import About from "./components/about.jsx";
 import Info from "./components/info.jsx";
 import Stack from "./components/stack.jsx";
+import Project from "./components/project.jsx";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </section>
         <section id="stack">
           <Stack />
+        </section>
+        <section id="project">
+          <Project />
         </section>
       </main>
     </div>

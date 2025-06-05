@@ -74,9 +74,77 @@
   @apply text-5xl font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold;
 }
 
-.stack-animation:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 60px rgb(255, 255, 255);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
- 
+ .stack-animation:hover {
+  scale: 1.04;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out, 
+  box-shadow 0.3s ease-in-out;
+  opacity: 100%;
+
+   
 }
+
+  .python-animation:hover {
+    box-shadow:  10px 10px 80px #ffc800;
+    border: none;
+  }
+
+  .html-animation:hover {
+    box-shadow: 10px 10px 80px #e34c26;
+    border: none;
+  }
+
+  .css-animation:hover {
+    box-shadow: 10px 10px 80px #264de4;
+    border: none;
+  }
+
+  .react-animation:hover {
+    box-shadow: 10px 10px 80px #00c8ff;
+    border: none;
+  }
+
+  .sql-animation:hover {
+    box-shadow: 10px 10px 80px #ffff00;
+    border: none;
+  }
+
+  .js-animation:hover {
+    box-shadow: 10px 10px 80px #ffdd00;
+    border: none;
+  }
+
+  .tailwind-animation:hover {
+    box-shadow: 10px 10px 80px #00b3ff;
+    border: none;
+  }
+
+  .typescript-animation:hover {
+    box-shadow: 10px 10px 80px #007bff;
+    border: none;
+  }
+
+  .vite-animation:hover {
+    box-shadow: 10px 10px 80px #c800ff;
+    border: none;
+  }
+
+  .cuda-animation:hover {
+    box-shadow: 10px 10px 80px #a2ff00;
+    border: none;
+  }
+
+  .postman-animation:hover {
+    box-shadow: 10px 10px 80px #ff4400;
+    border: none;
+  }
+
+  .nodejs-animation:hover {
+    box-shadow: 10px 10px 80px #09ff00;
+    border: none;
+  }
+
+  .git-animation:hover {
+    box-shadow: 10px 10px 80px #ff2a00;
+    border: none;
+  }
