@@ -23,15 +23,15 @@ function Navbar() {
   }, []);
 
   const linkClass = (id) =>
-    `text-gray-400 hover:text-white transition ${
+    `text-gray-400 hover:text-glow-white transition  ${
       activeSection === id
-        ? "text-white drop-shadow-[0_0_10px_#fff] font-bold"
+        ? "text-glow-white font-bold border p-2  rounded-full bg-gray-800 border-gray-500"
         : ""
     }`;
 
   return (
     <nav className="flex sticky top-0  z-100 justify-center p-4 py-9 text-xl font-mono ">
-      <ul className="list-none flex space-x-10 border rounded-full px-6 py-3 border-gray-500 bg-gray-900 tracking-widest opacity-80 backdrop-blur-md">
+      <ul className="list-none flex space-x-11 border rounded-full px-8 py-4 border-gray-500 bg-gray-900 tracking-widest opacity-80 backdrop-blur-md">
         <li>
           <a href="#about" className={linkClass("about")}>Home</a>
         </li>
