@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @keyframes gradientFlow {
   0%, 100% {
@@ -9,7 +11,23 @@
   }
 }
 
-
+.bg-animated-g {
+  background: linear-gradient(
+    135deg,
+    rgb(255, 0, 128),
+    rgb(0, 204, 255),
+    rgb(154, 52, 255),
+    rgb(0, 13, 255)
+  );
+  background-size: 300% 300%;
+  animation: gradientFlow 5s ease-in-out infinite;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(255, 0, 128, 0.2),
+              0 0 80px rgba(0, 204, 255, 0.2),
+              0 0 100px rgba(255, 0, 0, 0.2);
+  opacity: 85%;
+  
+}
 
 .bg-animated-gradient {
   background: linear-gradient(

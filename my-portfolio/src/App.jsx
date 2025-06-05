@@ -4,6 +4,7 @@ import About from "./components/about.jsx";
 import Info from "./components/info.jsx";
 import Stack from "./components/stack.jsx";
 import Project from "./components/project.jsx";
+import Contact from "./components/contact.jsx";
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
         </section>
         <section id="project">
           <Project />
+        </section>
+
+        <section id="contact">
+          <Contact />
+
         </section>
       </main>
     </div>

@@ -23,9 +23,9 @@ function Navbar() {
   }, []);
 
   const linkClass = (id) =>
-    `text-gray-400 hover:text-glow-white transition  ${
+    `text-white/90    ${
       activeSection === id
-        ? "text-glow-white font-bold border p-2  rounded-full bg-gray-800 border-gray-500"
+        ? "text-glow-white font-bold border p-2  rounded-2xl scale-[1.05] bg-animated-g "
         : ""
     }`;
 
