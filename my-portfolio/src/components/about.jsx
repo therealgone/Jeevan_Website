@@ -1,11 +1,26 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { motion } from "framer-motion";
+
 function About() {
   return (
-   <div className='text-center tracking-widest min-h-screen px-4 md:px-8 lg:px-16'>
-      <h1 className="text-4xl md:text-5xl font-bold py-10 mb-20 font-mono text-glow-white">Jeevan Baabu Murugan</h1>
+   <div className='text-center  tracking-widest min-h-screen px-4 md:px-8 lg:px-16 '>
+    <motion.div
+    initial={{ opacity: 0, y: 0 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: 'easeInOut' }}
+  >
+    <h1 className="text-4xl md:text-5xl font-bold py-10 mb-20 font-mono text-glow-white">
+      Jeevan Baabu Murugan
+    </h1>
+  </motion.div>
+  <motion.div 
+    initial={{opacity:0, y:80}}
+    animate={{opacity:1, y:0}}
+    transition={{ duration: 1, ease:"easeInOut"}}
+    >
        <h1 className='bg-animated-gradient border border-transparent text-white flex items-center justify-center w-full max-w-[400px] h-[80px] mx-auto text-glow-white'>
-        {''}
+        
         
         <span className='font-mono font-bold text-3xl  '>
             <Typewriter
@@ -19,11 +34,16 @@ function About() {
             />
         </span>
        </h1>
-       <div>
+       
+       
       <h3 className="italic text-gray-500 py-10">
         "Each line I write forges a blade that cleaves through the fabric of reality"
       </h3>
-
+      </motion.div >
+      <motion.div initial={{opacity:0 , y:90}}
+                  animate={{opacity:1 , y:0}}
+                  transition={{duration:0.9 , ease:"easeInOut"}}
+      >
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 justify-center mt-6 tracking-widest font-mono">
         <a
           href="https://github.com/therealgone"
@@ -53,14 +73,12 @@ function About() {
           <span>LinkedIn</span>
         </a>
       </div>
+      </motion.div>
      
 
     </div>
-     <div className='mt-40 animate-bounce'>
-        <h5>Scroll for more</h5>
-        <h5 className='font-bold text-2xl'>↓</h5>
-      </div>
-    </div>
+     
+    
     
   );
 }
