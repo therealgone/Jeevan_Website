@@ -1,18 +1,34 @@
 import Lottie from "lottie-react";
 import handWave from "./hand-wave.json";
-
+import { motion } from "framer-motion";
 
 function Info() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-6">
+    <div className="min-h-screen flex flex-col items-center justify-start p-1 md:p-1 pt-0">
       {/* Heading */}
-      <h1 className="text-3xl md:text-5xl font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold hover:animate-pulse">
+      <motion.h1  initial={{opacity:0 , y:90}}
+                  whileInView={{opacity:1,y:0}}
+                  transition={{duration:0.6, ease:'easeInOut'}}
+                  viewport={{once:true , amount:0.9}}
+                  className="text-7xl md:text-8xl font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold hover:animate-pulse mt-5"
+      >
         About Me
-      </h1>
-      <hr className="w-24 border-2 border-purple-600 opacity-60 rounded-full my-6" />
-
+      </motion.h1>
+      <motion.h1
+                  initial={{opacity:0 , y:90}}
+                  whileInView={{opacity:1,y:0}}
+                  transition={{duration:0.6, ease:'easeInOut'}}
+                  viewport={{once:true , amount:0.5}} 
+      className="w-24 border-2 bg-animated-g opacity-60 rounded-full my-6 "></motion.h1>
+      
+      
       {/* Main Content Box */}
-      <div className="w-full max-w-4xl rounded-2xl p-4 md:p-6 bg-gradient-to-br from-white/10 to-white/10 dark:from-gray-800/10 dark:to-gray-900/10 backdrop-blur-xl border border-white/10 dark:border-gray-700/10 shadow-2xl font-mono tracking-wide">
+      <motion.div initial={{opacity:0 , y:90}}
+                  whileInView={{opacity:1,y:0}}
+                  transition={{duration:0.6, ease:'easeInOut'}}
+                  viewport={{once:true , amount:0.5}}
+      
+      className="w-full max-w-4xl rounded-2xl p-4 md:p-6 bg-gradient-to-br from-white/10 to-white/10 dark:from-gray-800/10 dark:to-gray-900/10 backdrop-blur-xl border border-white/10 dark:border-gray-700/10 shadow-2xl font-mono tracking-wide mt-4">
         <h1 className="font-bold text-xl md:text-2xl flex items-center gap-3 justify-center mt-2">
           <Lottie animationData={handWave} style={{ width: 50, height: 50 }} />
           Hi, I'm Jeevan Baabu Murugan
@@ -56,8 +72,10 @@ function Info() {
         </h2>
 
         <div className="mt-7 mb-3 border border-gray-600"></div>
+      </motion.div>
+
       </div>
-    </div>
+    
   );
 }
 

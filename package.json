@@ -9,5 +9,9 @@
     "build": "cd my-portfolio && npm run build",
     "dev": "cd my-portfolio && npm run dev",
     "start": "cd my-portfolio && npm run start"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "typewriter-effect": "^2.22.0"
   }
-} 
+}

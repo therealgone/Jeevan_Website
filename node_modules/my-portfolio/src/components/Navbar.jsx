@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("");
@@ -45,21 +46,31 @@ function Navbar() {
   return (
     <nav className="flex sticky top-0 z-[9999] justify-center p-4 py-6 text-xl font-mono bg-gray-900/30 backdrop-blur-md">
       <ul className="list-none flex space-x-11 border rounded-full px-8 py-4 border-gray-500 bg-gray-900 tracking-widest opacity-80 backdrop-blur-md">
-        <li>
+        <motion.li initial={{opacity:0,y:-50}}
+                   animate={{opacity:1,y:0}}
+                   transition={{ duration:0.3, ease:'easeInOut'}}>
           <a href="#about" onClick={(e) => handleClick(e, "about")} className={linkClass("about")}>Home</a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li initial={{opacity:0,y:-60}}
+                   animate={{opacity:1,y:0}}
+                   transition={{ duration:0.5, ease:'easeInOut'}}>
           <a href="#info" onClick={(e) => handleClick(e, "info")} className={linkClass("info")}>About</a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li initial={{opacity:0,y:-70}}
+                   animate={{opacity:1,y:0}}
+                   transition={{ duration:0.7, ease:'easeInOut'}}>
           <a href="#stack" onClick={(e) => handleClick(e, "stack")} className={linkClass("stack")}>Stack</a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li initial={{opacity:0,y:-80}}
+                   animate={{opacity:1,y:0}}
+                   transition={{ duration:0.8, ease:'easeInOut'}}>
           <a href="#project" onClick={(e) => handleClick(e, "project")} className={linkClass("project")}>Project</a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li initial={{opacity:0,y:-90}}
+                   animate={{opacity:1,y:0}}
+                   transition={{ duration:1, ease:'easeInOut'}}>
           <a href="#contact" onClick={(e) => handleClick(e, "contact")} className={linkClass("contact")}>Contact</a>
-        </li>
+        </motion.li>
       </ul>
     </nav>
   );
