@@ -2,9 +2,9 @@ import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 function About() {
   return (
-   <div className='text-center  tracking-widest min-h-screen'>
-      <h1 className="text-5xl font-bold py-10 mb-20 font-mono text-glow-white  ">Jeevan Baabu Murugan</h1>
-       <h1 className='bg-animated-gradient border border-transparent text-white flex items-center  justify-center w-[400px] h-[80px]  mx-auto text-glow-white '>
+   <div className='text-center tracking-widest min-h-screen px-4 md:px-8 lg:px-16'>
+      <h1 className="text-4xl md:text-5xl font-bold py-10 mb-20 font-mono text-glow-white">Jeevan Baabu Murugan</h1>
+       <h1 className='bg-animated-gradient border border-transparent text-white flex items-center justify-center w-full max-w-[400px] h-[80px] mx-auto text-glow-white'>
         {''}
         
         <span className='font-mono font-bold text-3xl  '>
@@ -24,7 +24,7 @@ function About() {
         "Each line I write forges a blade that cleaves through the fabric of reality"
       </h3>
 
-      <div className="flex gap-10 justify-center mt-6 tracking-widest font-mono ">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10 justify-center mt-6 tracking-widest font-mono">
         <a
           href="https://github.com/therealgone"
           target="_blank"

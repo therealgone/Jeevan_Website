@@ -12,23 +12,23 @@ function App() {
       <AnimatedBackground />
       <Navbar />
 
-      <main className="relative z-10 text-white pt-20">
+      <main className="relative z-10 text-white pt-16">
         {/* Each section wrapped with an ID */}
-        <section id="about">
+        <section id="about" className="scroll-mt-20">
           <About />
         </section>
 
-        <section id="info">
+        <section id="info" className="scroll-mt-20">
           <Info />
         </section>
-        <section id="stack">
+        <section id="stack" className="scroll-mt-20">
           <Stack />
         </section>
-        <section id="project">
+        <section id="project" className="scroll-mt-20">
           <Project />
         </section>
 
-        <section id="contact">
+        <section id="contact" className="scroll-mt-20">
           <Contact />
         </section>
       </main>

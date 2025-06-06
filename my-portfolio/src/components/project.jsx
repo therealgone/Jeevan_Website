@@ -1,17 +1,16 @@
-
 function project() {
  return (
-  <div className="min-h-screen flex flex-col items-center justify-center font-mono tracking-wider space-y-12">
-  <h1 className="text-4xl mt-8 text-white">Projects</h1>
+  <div className="min-h-screen flex flex-col items-center justify-center space-y-12 px-4 md:px-8 lg:px-16">
+  <h1 className="text-3xl md:text-5xl mt-10 font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold">Projects</h1>
 
   {/* 🔹 Project 1: Fake News Detection */}
   <a
     href="https://github.com/therealgone/FAKE-NEWS-DETECTION"
     target="_blank"
     rel="noopener noreferrer"
-    className="block"
+    className="block w-full max-w-[900px]"
   >
-    <div className="relative w-[900px] h-[700px] rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white/10">
+    <div className="relative w-full aspect-[9/7] rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white/10">
       <img
         src="https://github.com/therealgone/FAKE-NEWS-DETECTION/raw/main/Fake%20News%20Detector%20UI.png"
         className="w-full h-full object-cover"
@@ -32,9 +31,9 @@ function project() {
     href="https://github.com/therealgone/Medical-Insurance-Report-"
     target="_blank"
     rel="noopener noreferrer"
-    className="block"
+    className="block w-full max-w-[900px]"
   >
-    <div className="relative w-[900px] h-[700px] rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white">
+    <div className="relative w-full aspect-[9/7] rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white">
       <img
         src="https://github.com/therealgone/Medical-Insurance-Report-/raw/main/UI1.png"
         className="w-full h-full object-cover"
@@ -55,9 +54,9 @@ function project() {
     href="https://github.com/therealgone/Hand-Gesture-Based-Communication-System-for-Disabled-Individual"
     target="_blank"
     rel="noopener noreferrer"
-    className="block"
+    className="block w-full max-w-[900px]"
   >
-    <div className="relative w-[900px] h-[700px] rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white transition-all duration-900 ease-in-out">
+    <div className="relative w-full aspect-[9/7] rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white transition-all duration-900 ease-in-out">
       <img
         src="https://github.com/therealgone/Hand-Gesture-Based-Communication-System-for-Disabled-Individual/raw/main/UI.jpg"
         className="w-full h-full object-cover"
@@ -74,7 +73,7 @@ function project() {
   </a>
 
   {/* 🔹 Coming Soon */}
-  <div className="w-[900px] h-[250px] rounded-3xl flex items-center justify-center border-2 border-dashed border-white/20 text-white/60 text-xl tracking-widest hover:scale-[1.03]  transition-all duration-900 ease-in-out  ">
+  <div className="w-full max-w-[900px] h-[250px] rounded-3xl flex items-center justify-center border-2 border-dashed border-white/20 text-white/60 text-xl tracking-widest hover:scale-[1.03] transition-all duration-900 ease-in-out">
    <span className=" animate-bounce ">🚀</span>  More Projects Coming Soon...
   </div>
 </div>
