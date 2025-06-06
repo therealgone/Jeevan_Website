@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React, showcasing my projects, skills, and experience in web development and AI/ML.
 
-![Portfolio Preview](https://github.com/therealgone/Jeevan_Website/raw/main/my-portfolio/src/assets/portfolio-preview.png)
+![Portfolio Preview](Screenshot 2025-06-06 155906.png)
 
 ## 🚀 Features
 
