@@ -25,7 +25,7 @@ function Navbar() {
   const linkClass = (id) =>
     `text-white/90    ${
       activeSection === id
-        ? "text-glow-white font-bold border p-2  rounded-2xl scale-[1.05] bg-animated-g "
+        ? " font-bold border font-mono   p-2 scale-[1.05] bg-animated-g rounded-full transition-all duration-300 ease-in-out"
         : ""
     }`;
 

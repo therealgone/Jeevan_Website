@@ -24,12 +24,12 @@ function About() {
         "Each line I write forges a blade that cleaves through the fabric of reality"
       </h3>
 
-      <div className="flex gap-10 justify-center mt-6 tracking-widest font-mono">
+      <div className="flex gap-10 justify-center mt-6 tracking-widest font-mono ">
         <a
           href="https://github.com/therealgone"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-black transition"
+          className="flex items-center gap-4 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-black hover:scale-[1.05] transition-all duration-300 ease-in-out"
         >
           <FaGithub className="w-10 h-10" />
           <span>GitHub</span>
@@ -37,7 +37,7 @@ function About() {
 
         <a
           href="mailto:jeevanbaabu03@gmail.com"
-          className="flex items-center gap-4 px-4 py-2  bg-gray-900 text-white rounded-full  hover:bg-red-600 transition "
+          className="flex items-center gap-4 px-4 py-2  bg-gray-900 text-white rounded-full  hover:bg-red-600  hover:scale-[1.05] transition-all duration-300 ease-in-out "
         >
           <FaEnvelope className="w-10 h-10" />
           <span>Email</span>
@@ -47,7 +47,7 @@ function About() {
           href="https://www.linkedin.com/in/jeevan-baabu-97a19125b/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-blue-800  transition"
+          className="flex items-center gap-4 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-blue-800   hover:scale-[1.05] transition-all duration-300 ease-in-out"
         >
           <FaLinkedin className="w-10 h-10" />
           <span>LinkedIn</span>
