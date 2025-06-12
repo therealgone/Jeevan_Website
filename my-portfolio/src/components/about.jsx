@@ -76,10 +76,10 @@ function About() {
         initial={{opacity:0, y:90}}
         animate={{opacity:1, y:0}}
         transition={{duration:0.9, ease:"easeInOut"}}
-        className="mt-8"
+        className="absolute bottom-8 left-0 right-0 mx-auto w-full flex flex-col items-center justify-center z-10"
       >
-        <h1 className='text-glow-white text-xl md:text-2xl mb-2 mt-60'>Scroll for more</h1>
-        <h2 className='animate-bounce text-3xl md:text-6xl font-extrabold text-glow-white mt-5'>↓</h2>
+        <h1 className='text-glow-white text-lg md:text-xl mb-2'>Scroll for more</h1>
+        <h2 className='animate-bounce text-2xl md:text-4xl font-extrabold text-glow-white'>↓</h2>
       </motion.div>
     </div>
    </div>
