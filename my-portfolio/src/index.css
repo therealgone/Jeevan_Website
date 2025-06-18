@@ -166,3 +166,10 @@
     box-shadow: 10px 10px 80px #ff2a00;
     border: none;
   }
+
+html, body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+}
