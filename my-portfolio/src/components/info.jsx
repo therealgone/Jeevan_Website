@@ -10,7 +10,7 @@ function Info() {
                   whileInView={{opacity:1,y:0}}
                   transition={{duration:0.6, ease:'easeInOut'}}
                   viewport={{once:true , amount:0.9}}
-                  className="text-7xl md:text-8xl font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold hover:animate-pulse mt-5"
+                  className="text-4xl md:text-8xl font-mono tracking-widest bg-gradient-to-l from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent font-extrabold hover:animate-pulse mt-4"
       >
         About Me
       </motion.h1>
@@ -19,7 +19,7 @@ function Info() {
                   whileInView={{opacity:1,y:0}}
                   transition={{duration:0.6, ease:'easeInOut'}}
                   viewport={{once:true , amount:0.5}} 
-      className="w-24 border-2 bg-animated-g opacity-60 rounded-full my-6 "></motion.h1>
+      className="w-20 border-2 bg-animated-g opacity-60 rounded-full my-4 "></motion.h1>
       
       
       {/* Main Content Box */}
@@ -28,15 +28,15 @@ function Info() {
                   transition={{duration:0.6, ease:'easeInOut'}}
                   viewport={{once:true , amount:0.5}}
       
-      className="w-full max-w-4xl rounded-2xl p-4 md:p-6 bg-gradient-to-br from-white/10 to-white/10 dark:from-gray-800/10 dark:to-gray-900/10 backdrop-blur-xl border border-white/10 dark:border-gray-700/10 shadow-2xl font-mono tracking-wide mt-4">
-        <h1 className="font-bold text-xl md:text-2xl flex items-center gap-3 justify-center mt-2">
-          <Lottie animationData={handWave} style={{ width: 50, height: 50 }} />
+      className="w-full max-w-4xl rounded-2xl p-3 md:p-6 bg-gradient-to-br from-white/10 to-white/10 dark:from-gray-800/10 dark:to-gray-900/10 backdrop-blur-xl border border-white/10 dark:border-gray-700/10 shadow-2xl font-mono tracking-wide mt-3">
+        <h1 className="font-bold text-lg md:text-2xl flex items-center gap-2 justify-center mt-2">
+          <Lottie animationData={handWave} style={{ width: 40, height: 40 }} />
           Hi, I'm Jeevan Baabu Murugan
         </h1>
 
         <div className="mt-7 mb-3 border border-gray-600"></div>
 
-        <h2 className="py-5 text-base md:text-lg">
+        <h2 className="py-4 text-sm md:text-lg">
           <span className="font-bold text-purple-600 dark:text-purple-400">
             Computer Science Engineering (AI & ML)
           </span>{" "}
@@ -47,7 +47,7 @@ function Info() {
           with a strong focus on Artificial Intelligence and Machine Learning.
         </h2>
 
-        <h2 className="mt-3 mb-3 text-base md:text-lg">
+        <h2 className="mt-2 mb-2 text-sm md:text-lg">
           I specialize in building smart, efficient applications using tools like{" "}
           <span className="font-bold text-blue-600 dark:text-blue-400">
             Python, TensorFlow, MediaPipe, and LSTM
@@ -55,7 +55,7 @@ function Info() {
           and I enjoy crafting intelligent systems — from gesture-based interfaces to real-time ML models on edge devices like Raspberry Pi.
         </h2>
 
-        <h2 className="mt-3 mb-3 text-base md:text-lg">
+        <h2 className="mt-2 mb-2 text-sm md:text-lg">
           I'm skilled in optimizing PC performance, overclocking hardware, and adapting quickly to new technologies with the help of AI tools. My development toolkit also includes{" "}
           <span className="font-bold text-blue-600 dark:text-blue-400">
             React, Next.js, Tailwind CSS, and Framer Motion
@@ -63,7 +63,7 @@ function Info() {
           and I'm exploring the power of TypeScript and modern web development frameworks.
         </h2>
 
-        <h2 className="mt-3 mb-3 text-base md:text-lg">
+        <h2 className="mt-2 mb-2 text-sm md:text-lg">
           Beyond academics, I'm constantly learning — whether it's through hands-on projects, certifications like{" "}
           <span className="font-bold text-blue-600 dark:text-blue-400">
             Oracle Cloud, Red Hat Linux, JPMorgan Forage

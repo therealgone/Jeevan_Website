@@ -147,6 +147,32 @@ function project() {
           </div>
         </motion.a>
 
+        {/* 🔹 Project 5: React Movie */}
+        <motion.a
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          href="https://github.com/therealgone/React-Movie"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full max-w-[900px] mx-auto"
+        >
+          <div className="relative w-full aspect-[9/7] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white/10">
+            <img
+              src="https://github.com/therealgone/React-Movie/blob/main/Movie/UI%20Movie.png?raw=true"
+              className="w-full h-full object-cover"
+              alt="React Movie"
+            />
+            <div className="absolute bottom-0 w-full h-[150px] md:h-[200px] bg-gradient-to-br from-gray-800/10 to-gray-900/10 backdrop-blur-xl border-t border-gray-700/10 p-3 md:p-5">
+              <h1 className="text-white text-lg md:text-xl">React Movie 🎬</h1>
+              <p className="text-white/70 mt-1 md:mt-2 text-base md:text-xl">
+                A modern, glowing, IMDB-inspired movie browser built with React and the TMDB API. This project was made just to learn and practice React, API integration, and beautiful UI design!
+              </p>
+            </div>
+          </div>
+        </motion.a>
+
         {/* 🔹 Coming Soon */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
