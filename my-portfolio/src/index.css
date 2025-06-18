@@ -167,9 +167,48 @@
     border: none;
   }
 
-html, body {
+html {
   min-height: 100vh;
   height: 100%;
-  width: 100vw;
-  overflow-x: hidden;
+  /* no overflow-x here */
 }
+body {
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  /* Hide scrollbars visually for all browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+@media (min-width: 768px) {
+  html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    cursor: none; /* Hide default cursor on desktop */
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .custom-crosshair {
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 0 16px 6px rgba(255,255,255,0.7), 0 0 0 2px #fff;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 2px solid rgba(255,255,255,0.7);
+    transition: transform 0.1s cubic-bezier(.4,2,.6,1), opacity 0.2s;
+    opacity: 0.95;
+    mix-blend-mode: lighten;
+  }
+}
+

@@ -37,7 +37,7 @@ function About() {
          </h1>
          
          
-        <h3 className="italic text-gray-500 text-lg md:text-2xl mt-8 mb-8 ">
+        <h3 className="italic text-gray-500 text-lg md:text-2xl mt-8 mb-20">
           "Each line I write forges a blade that cleaves through the fabric of reality"
         </h3>
         
@@ -78,7 +78,7 @@ function About() {
         transition={{duration:0.9, ease:"easeInOut"}}
         className="mt-16 mb-8 flex flex-col items-center justify-center"
       >
-        <h1 className='text-glow-white text-base md:text-xl mb-2'>Scroll for more</h1>
+        <h1 className='text-glow-white text-base  md:mt-44 md:text-xl mb-2 '>Scroll for more</h1>
         <h2 className='animate-bounce text-xl md:text-4xl font-extrabold text-glow-white'>↓</h2>
       </motion.div>
     </div>
