@@ -28,7 +28,7 @@ function Navbar() {
   const linkClass = (id) =>
     `text-white/90 ${
       activeSection === id
-        ? "font-bold border font-mono p-2 scale-[1.05] bg-animated-g rounded-full transition-all duration-200 ease-in-out"
+        ? "font-bold border font-mono p-2 scale-[1.05] bg-animated-g rounded-full transition-all duration-200 ease-in-out "
         : ""
     }`;
 
@@ -55,9 +55,9 @@ function Navbar() {
   ];
 
   return (
-    <nav className="flex sticky top-0 z-[9999] justify-center p-2 md:p-4 py-4 md:py-6 text-xl font-mono bg-gray-900/30 backdrop-blur-md">
+    <nav className="flex sticky top-0 z-[9999] justify-center p-2 md:p-4 py-4 md:py-6 text-xl font-mono bg-gray-900/30 backdrop-blur-md ">
       {/* Desktop Menu */}
-      <ul className="hidden md:flex list-none space-x-11 border rounded-full px-8 py-4 border-gray-500 bg-gray-900 tracking-widest opacity-80 backdrop-blur-md">
+      <ul className="hidden md:flex list-none space-x-11 border rounded-full px-8 py-4 border-gray-500 bg-gray-900 tracking-widest opacity-80 backdrop-blur-md ">
         {navItems.map((item, index) => (
           <motion.li 
             key={item.id}
@@ -69,6 +69,7 @@ function Navbar() {
               href={`#${item.id}`} 
               onClick={(e) => handleClick(e, item.id)} 
               className={linkClass(item.id)}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               {item.label}
             </a>
