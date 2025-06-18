@@ -5,10 +5,33 @@ import Info from "./components/info.jsx";
 import Stack from "./components/stack.jsx";
 import Project from "./components/project.jsx";
 import Contact from "./components/contact.jsx";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
+  const crosshairRef = useRef(null);
+  const [showCrosshair, setShowCrosshair] = useState(false);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (window.innerWidth >= 768 && crosshairRef.current) {
+        crosshairRef.current.style.transform = `translate3d(${e.clientX - 24}px, ${e.clientY - 24}px, 0)`;
+      }
+    };
+    const handleResize = () => {
+      setShowCrosshair(window.innerWidth >= 768);
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="relative w-full  scroll-smooth">
+      {showCrosshair && <div ref={crosshairRef} className="custom-crosshair" />}
       <AnimatedBackground />
       <Navbar />
 
