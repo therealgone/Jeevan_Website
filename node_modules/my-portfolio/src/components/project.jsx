@@ -173,6 +173,32 @@ function project() {
           </div>
         </motion.a>
 
+        {/* 🔹 Project 6: Dev-Book */}
+        <motion.a
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          href="https://my-book-indol.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full max-w-[900px] mx-auto"
+        >
+          <div className="relative w-full aspect-[9/7] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 cursor-pointer hover:shadow-white/10">
+            <img
+              src="https://github.com/therealgone/Dev-Book/blob/main/public/UI.png?raw=true"
+              className="w-full h-full object-cover"
+              alt="Dev-Book"
+            />
+            <div className="absolute bottom-0 w-full h-[150px] md:h-[200px] bg-gradient-to-br from-gray-800/10 to-gray-900/10 backdrop-blur-xl border-t border-gray-700/10 p-3 md:p-5">
+              <h1 className="text-white text-lg md:text-xl">Dev-Book</h1>
+              <p className="text-white/70 mt-1 md:mt-2 text-base md:text-xl">
+                A living dev journey: Everything I learn, build, and improve in React and web development. As I learn, I build. As I build, I forget. Dev-Book is my way of documenting everything — so I never lose track of my dev journey. It's also a place for other devs to learn real-world things, just raw code and logic.
+              </p>
+            </div>
+          </div>
+        </motion.a>
+
         {/* 🔹 Coming Soon */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
